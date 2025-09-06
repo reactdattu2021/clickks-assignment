@@ -1,0 +1,144 @@
+.services-section {
+  padding: 5rem 2rem;
+  background-color: #171414;
+  color: #4d4343;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: #4d4343;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background: #080808;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.service-card ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #f59e0b;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.btn-learn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: #f59e0b;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-learn:hover {
+  background: #d97706;
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  background:#080808;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card span {
+  font-weight: 500;
+  color: #333;
+}

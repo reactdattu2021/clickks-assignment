@@ -1,0 +1,85 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-around; /* logo left, items right */
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 12px 20px;
+  flex-wrap: nowrap; /* don't wrap by default */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Container for links + logout */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex; /* row by default */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Logout button */
+.auth-btn {
+  background: crimson;
+  border: none;
+  width: auto;
+  padding: 8px 14px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-btn:hover {
+  background: darkred;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;       /* stack logo + items vertically */
+    align-items: center;
+  }
+
+  .nav-items {
+    flex-direction: column;       /* stack links + logout */
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    width: 100%;
+  }
+
+  .auth-btn {
+    width: 100%;                  /* full width under links */
+  }
+}

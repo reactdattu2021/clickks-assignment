@@ -1,0 +1,88 @@
+/* ======================= */
+/* Register Page CSS Only   */
+/* ======================= */
+
+/* Container */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;         /* center horizontally */
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.auth-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.auth-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+.auth-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.auth-input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 20px;
+  background: #2575fc;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.auth-btn:hover {
+  background: #1a5ed8;
+  transform: translateY(-2px);
+}
+
+/* Responsive for small screens */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .auth-title {
+    font-size: 24px;
+  }
+
+  .auth-input,
+  .auth-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
