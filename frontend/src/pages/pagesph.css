@@ -1,0 +1,182 @@
+.about-section {
+  padding: 5rem 2rem;
+  background: #0a0a0a;
+  color: #f9f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* Text */
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.about-text .highlight {
+  color: #f59e0b;
+  display: block;
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
+
+.about-description p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Achievements */
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .achievements {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.achievement {
+  text-align: center;
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.achievement-label {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Buttons */
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #d97706;
+}
+
+.btn-secondary {
+  background:#0a0a0a;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+  background: #f3f3f3;
+}
+
+/* Image */
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+/* Floating Card */
+.floating-card {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: #201f1f;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid #eee;
+}
+
+.floating-card-icon {
+  width: 50px;
+  height: 50px;
+  background: #f59e0b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.floating-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.floating-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+}

@@ -22,9 +22,9 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <nav className="navbar">
-        <div className="logo">KlickUs</div>
+        <div className="logo">Klickks</div>
         <ul className="nav-links">
-          <li><Link to="/dashboard/customer">Customer</Link></li>
+          <li><Link to="/dashboard/customer">Services</Link></li>
           <li><Link to="/dashboard/photographer">Photographer</Link></li>
           <li><Link to="/dashboard/about">About Company</Link></li>
           <li><Link to="/dashboard/contact">Contact Us</Link></li>

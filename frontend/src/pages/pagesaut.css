@@ -1,0 +1,139 @@
+/* Portfolio Section */
+.portfolio-section {
+  padding: 80px 20px;
+  background: #111010;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio-header h2 {
+  font-size: 2.5rem;
+  color: #f2efef;
+  margin-bottom: 20px;
+}
+
+.portfolio-header p {
+  font-size: 1.1rem;
+  color: #797272;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+/* Button */
+.btn {
+  padding: 12px 24px;
+  background: #0077ff;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+.btn-primary {
+  background: #28a745;
+}
+
+.btn-primary:hover {
+  background: #218838;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.portfolio-overlay p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.portfolio-category {
+  font-size: 0.85rem;
+  color: #eef084;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Call to Action */
+.portfolio-cta {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-cta h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.portfolio-cta p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
