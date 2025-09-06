@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage from "../assets/hero-studio.jpg"; // adjust path as per your folder
 import { FaCamera, FaAward, FaUsers } from "react-icons/fa";
-import "./Hero.css"; // Create and import a CSS file for styling
+import "./hero.css"; // Create and import a CSS file for styling
 
 function Hero() {
   return (
