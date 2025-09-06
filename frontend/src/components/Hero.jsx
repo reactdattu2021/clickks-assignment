@@ -1,10 +1,15 @@
 import React from "react";
 import heroImage from "../assets/hero-studio.jpg"; // adjust path as per your folder
 import { FaCamera, FaAward, FaUsers } from "react-icons/fa";
+import Footer from "../pages/footer";
+import Customer from "../pages/Customer"; 
+import Photographer from "../pages/Photographer";
+import AboutCompany from "../pages/AboutCompany";
+import ContactUs from "../pages/ContactUs";
 import "./hero.css"; // Create and import a CSS file for styling
 
 function Hero() {
-  return (
+  return (<div>
     <section id="home" className="hero">
       {/* Background */}
       <div className="hero-bg">
@@ -54,6 +59,12 @@ function Hero() {
         </div>
       </div>
     </section>
+    <Customer/>
+    <Photographer/>
+    <AboutCompany/>
+    <Footer/>
+    
+    </div>
   );
 }
 

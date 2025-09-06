@@ -26,11 +26,12 @@ function Dashboard() {
         <ul className="nav-links">
           <li><Link to="/dashboard/customer">Services</Link></li>
           <li><Link to="/dashboard/photographer">Photographer</Link></li>
-          <li><Link to="/dashboard/about">About Company</Link></li>
+          <li><Link to="/dashboard/about">About Us</Link></li>
           <li><Link to="/dashboard/contact">Contact Us</Link></li>
         </ul>
         <button className="auth-btn" onClick={handleLogout}>Logout</button>
       </nav>
+      
 
       <div className="page-content">
         <Routes>

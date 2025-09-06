@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
 import portfolioImage from "../assets/portfolio-preview.jpg"; // adjust path
+// import Footer from "./footer";
 import "./pagesaut.css";
 const portfolioItems = [
   {
@@ -42,7 +43,7 @@ const portfolioItems = [
 ];
 
 const AboutCompany = () => {
-    return (
+    return (<div>
     <section id="portfolio" className="portfolio-section">
       <div className="container">
         {/* Header */}
@@ -82,6 +83,8 @@ const AboutCompany = () => {
         </div> */}
       </div>
     </section>
+    {/* <Footer/> */}
+    </div>
   );
 };
 

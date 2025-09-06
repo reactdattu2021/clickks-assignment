@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUser, FaHeart, FaBriefcase, FaCamera, FaClock, FaStar } from "react-icons/fa";
+  
 import "./customer.css";
 const services = [
   {
@@ -34,7 +35,7 @@ const features = [
   { icon: FaStar, text: "Expert Retouching" },
 ];
 const Customer = () => {
-  return (
+  return (<div>
     <section id="services" className="services-section">
       <div className="container">
         {/* Header */}
@@ -88,6 +89,8 @@ const Customer = () => {
         </div>
       </div>
     </section>
+    
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaAward, FaCamera, FaUsers, FaHeart } from "react-icons/fa";
 import photographerImage from "../assets/photographer-work.jpg"; // adjust path as needed
+// import Footer from "./footer";
 import "./pagesph.css";
 const achievements = [
   { icon: FaAward, number: "15+", label: "Industry Awards" },
@@ -10,7 +11,7 @@ const achievements = [
 ];
    
 const Photographer = () => {
- return (
+ return (<div>
     <section id="about" className="about-section">
       <div className="container">
         <div className="about-grid">
@@ -92,6 +93,8 @@ const Photographer = () => {
         </div>
       </div>
     </section>
+    {/* <Footer/> */}
+    </div>
   );
 };
 
