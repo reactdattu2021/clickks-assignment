@@ -13,7 +13,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/login",
+        "https://clickks-assignment.onrender.com/api/login",
         { email, password },
         { withCredentials: true }
       );

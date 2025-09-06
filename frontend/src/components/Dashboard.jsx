@@ -8,7 +8,7 @@ import Photographer from "../pages/Photographer";
 import AboutCompany from "../pages/AboutCompany";
 import ContactUs from "../pages/ContactUs";
 
-import "./Dashboard.css";
+import "./dashboard.css";
 
 function Dashboard() {
   const { logout } = useContext(AuthContext);
